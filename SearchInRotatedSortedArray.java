@@ -46,7 +46,6 @@ public class SearchInRotatedSortedArray {
     static int binarySearch(int[] arr, int target, int start, int end) {
 
         // find whether the array is sorted in ascending or descending
-        boolean isAsc = arr[start] < arr[end];
 
         while (start <= end) {
             // find the middle element
