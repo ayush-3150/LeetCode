@@ -8,8 +8,7 @@ public class CountRotation {
 
     static int countOfRotation(int[] arr) {
         int pivot = findPivot(arr);
-        int ans = pivot == -1 ? 0 : (pivot + 1) % arr.length;
-        return arr[ans];
+        return arr[(pivot + 1) % arr.length];
     }
 
     static int findPivot(int[] arr) {
